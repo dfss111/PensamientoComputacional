@@ -2,6 +2,19 @@ import pygame
 import sys
 import random
 
+#ventana
+from tkinter import *
+from tkinter import messagebox as MessageBox
+
+def test():
+    MessageBox.showinfo("Hola!", "Hola mundo") # título, mensaje
+
+root = Tk()
+
+Button(root, text = "Clícame", command=test).pack()
+
+root.mainloop()
+
 # constantes
 WIDTH, HEIGHT = 800, 600
 WHITE = (255, 255, 255)
@@ -18,7 +31,7 @@ clock = pygame.time.Clock()
 font = pygame.font.Font(None, 48)
 small_font = pygame.font.Font(None, 36)
 
-# palabras
+# palabras CAMBIAR!!!
 words = ['MONTERREY', 'PROGRAMACION', 'JUEGOS', 'MEMORIA', 'TECLADO']
 current_word = random.choice(words)
 guessed_word = ['_' for _ in current_word]
@@ -46,7 +59,7 @@ while not game_over:
                 else:
                     attempts += 1
 
-            # palabra completa
+            # palabra completa HASTA ACA CAMBIAR
             if ''.join(guessed_word) == current_word:
                 won = True
 

@@ -33,7 +33,9 @@ font = pygame.font.Font(None, 48)
 small_font = pygame.font.Font(None, 36)
 
 # palabras CAMBIAR!!!
-words = ['MONTERREY', 'PROGRAMACION', 'JUEGOS', 'MEMORIA', 'TECLADO']
+pygame.display("5+4")
+
+words = ['NUEVE']
 current_word = random.choice(words)
 guessed_word = ['_' for _ in current_word]
 

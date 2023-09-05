@@ -2,16 +2,17 @@ import pygame
 import sys
 import random
 
+
 #ventana
 from tkinter import *
 from tkinter import messagebox as MessageBox
 
 def test():
-    MessageBox.showinfo("Hola!", "Hola mundo") # título, mensaje
+    MessageBox.showinfo("Juego Ahorcado", "Bienvenido Usuario") # título, mensaje
 
 root = Tk()
 
-Button(root, text = "Clícame", command=test).pack()
+Button(root, text = "HAZ CLIC AQUI", command=test).pack()
 
 root.mainloop()
 

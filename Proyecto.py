@@ -29,12 +29,12 @@ pygame.display.set_caption("Ahorcado")
 clock = pygame.time.Clock()
 
 # fonts
-font = pygame.font.Font(None, 48)
-small_font = pygame.font.Font(None, 36)
+font = pygame.font.SysFont("Arial", 48)
+small_font = pygame.font.SysFont("Arial", 36)
 
-# palabras CAMBIAR!!!
+# palabras 
 
-words = ['NUEVE']
+words = ["CINCO, CUARENTA, TREINTA, CERO"]
 current_word = random.choice(words)
 guessed_word = ['_' for _ in current_word]
 
@@ -61,7 +61,7 @@ while not game_over:
                 else:
                     attempts += 1
 
-            # palabra completa HASTA ACA CAMBIAR
+            # palabra completa 
             if ''.join(guessed_word) == current_word:
                 won = True
 
